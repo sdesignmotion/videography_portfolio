@@ -3,30 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design Portfolio</title>
+    <title>Design Portfolio - s_design</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>My Design Portfolio</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Projects</h2>
-            <ul>
-                <li>
-                    <h3>Project One</h3>
-                    <p>Description for project one.</p>
-                </li>
-                <li>
-                    <h3>Project Two</h3>
-                    <p>Description for project two.</p>
-                </li>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-text">s_design</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Videography</a></li>
+                <li><a href="design.html" class="nav-link active">Design</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
-        </section>
-    </main>
-    <footer>
-        <p>© 2026 My Portfolio</p>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Design Portfolio</h1>
+        <p>Creative graphic design and visual storytelling</p>
+    </section>
+
+    <!-- Design Gallery -->
+    <section class="design-section">
+        <div class="section-header">
+            <h2>Design Work</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="design-grid">
+            <div class="design-card">
+                <div class="design-image">
+                    <div class="placeholder-1"></div>
+                    <div class="hover-overlay">
+                        <p>Branding</p>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Brand Identity</h3>
+                    <p class="category">Branding • Logo Design</p>
+                </div>
+            </div>
+
+            <div class="design-card">
+                <div class="design-image">
+                    <div class="placeholder-2"></div>
+                    <div class="hover-overlay">
+                        <p>Motion Graphics</p>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Motion Graphics</h3>
+                    <p class="category">Animation • Visual Effects</p>
+                </div>
+            </div>
+
+            <div class="design-card">
+                <div class="design-image">
+                    <div class="placeholder-3"></div>
+                    <div class="hover-overlay">
+                        <p>UI/UX Design</p>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>UI/UX Design</h3>
+                    <p class="category">Interface • User Experience</p>
+                </div>
+            </div>
+
+            <div class="design-card">
+                <div class="design-image">
+                    <div class="placeholder-4"></div>
+                    <div class="hover-overlay">
+                        <p>Social Media</p>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Social Media Content</h3>
+                    <p class="category">Graphics • Marketing</p>
+                </div>
+            </div>
+
+            <div class="design-card">
+                <div class="design-image">
+                    <div class="placeholder-5"></div>
+                    <div class="hover-overlay">
+                        <p>Print Design</p>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Print Design</h3>
+                    <p class="category">Brochures • Posters</p>
+                </div>
+            </div>
+
+            <div class="design-card">
+                <div class="design-image">
+                    <div class="placeholder-6"></div>
+                    <div class="hover-overlay">
+                        <p>Packaging</p>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Packaging Design</h3>
+                    <p class="category">Product • Branding</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://instagram.com" target="_blank" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://youtube.com" target="_blank" title="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <p>&copy; 2026 s_design. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script src="js/app.js"></script>
 </body>
 </html>
