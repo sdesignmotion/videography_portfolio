@@ -3,48 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Videography Portfolio</title>
+    <title>s_design - Motion and Graphics</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <section class="hero">
-            <h1>Welcome to My Videography Portfolio</h1>
-            <p>Capturing moments, telling stories.</p>
-            <a href="#gallery">View My Work</a>
-        </section>
-    </header>
-    <main>
-        <section id="gallery">
-            <h2>Video Gallery</h2>
-            <div class="video-gallery">
-                <video controls>
-                    <source src="video1.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <video controls>
-                    <source src="video2.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <video controls>
-                    <source src="video3.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-        </section>
-        <section id="services">
-            <h2>Services Offered</h2>
-            <ul>
-                <li>Weddings</li>
-                <li>Corporate Events</li>
-                <li>Product Videos</li>
-                <li>Promotional Videos</li>
-                <li>Editing Services</li>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-text">s_design</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Videography</a></li>
+                <li><a href="design.html" class="nav-link">Design</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 Videography Portfolio. All rights reserved.</p>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="logo-icon">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Phoenix/Wing Logo -->
+                    <path d="M100 50 Q130 70 140 110 Q145 130 120 150 Q100 165 80 150 Q55 130 60 110 Q70 70 100 50" fill="#D4A574"/>
+                    <path d="M100 100 Q110 110 100 120 Q90 110 100 100" fill="#1a1a2e"/>
+                </svg>
+            </div>
+            <h1>s_design</h1>
+            <p class="tagline">motion and graphics</p>
+            <a href="#portfolio" class="cta-btn">Explore My Work</a>
+        </div>
+    </header>
+
+    <!-- Videography Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="section-header">
+            <h2>Videography</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="video-grid">
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                </div>
+                <div class="card-content">
+                    <h3>Corporate Video</h3>
+                    <p class="client">Client Project</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                </div>
+                <div class="card-content">
+                    <h3>Event Coverage</h3>
+                    <p class="client">Client Project</p>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                </div>
+                <div class="card-content">
+                    <h3>Commercial</h3>
+                    <p class="client">Client Project</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="section-header">
+            <h2>Services</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-video"></i>
+                <h3>Videography</h3>
+                <p>Professional video production and cinematography</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-paint-brush"></i>
+                <h3>Motion Graphics</h3>
+                <p>Dynamic animated graphics and visual effects</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-pen-fancy"></i>
+                <h3>Design</h3>
+                <p>Creative graphic design and branding</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://instagram.com" target="_blank" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://youtube.com" target="_blank" title="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <p>&copy; 2026 s_design. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script src="js/app.js"></script>
 </body>
 </html>
