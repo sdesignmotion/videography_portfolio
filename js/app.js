@@ -1,48 +1,43 @@
-// JavaScript functionality for videography portfolio
-
-// Mobile menu toggle with hamburger animation
-document.addEventListener('DOMContentLoaded', function () {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
-
-    menuToggle.addEventListener('click', function () {
-        menuToggle.classList.toggle('active');
-        navLinks.classList.toggle('active');
+// Smooth scrolling for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
     });
 });
 
-// Smooth scrolling for navbar links
-const smoothScroll = (event) => {
-    event.preventDefault();
-    const targetId = event.currentTarget.getAttribute('href');
-    const targetElement = document.querySelector(targetId);
-    targetElement.scrollIntoView({ behavior: 'smooth' });
-};
+// Contact form submission
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Thank you for your message! I will get back to you soon.');
+        this.reset();
+    });
+}
 
-const links = document.querySelectorAll('nav a');
-links.forEach(link => {
-    link.addEventListener('click', smoothScroll);
+// Navbar scroll effect
+window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+        navbar.style.boxShadow = '0 4px 20px rgba(199, 95, 214, 0.2)';
+    } else {
+        navbar.style.boxShadow = 'none';
+    }
 });
 
-// Form submission handling
-const form = document.querySelector('form');
-form.addEventListener('submit', function (event) {
-    event.preventDefault();
-    const formData = new FormData(form);
-    // Handle AJAX form submission (assuming you have an endpoint for this)
-    fetch('/submit-form', {
-        method: 'POST',
-        body: formData,
-    })
-    .then(response => response.json())
-    .then(data => alert('Form submitted successfully!'))
-    .catch(error => console.error('Error:', error));
-});
-
-// Navigation link handling
-links.forEach(link => {
-    link.addEventListener('click', function () {
-        links.forEach(l => l.classList.remove('active'));
-        this.classList.add('active');
+// Add hover animation to portfolio cards
+const cards = document.querySelectorAll('.portfolio-card, .design-card');
+cards.forEach(card => {
+    card.addEventListener('mouseenter', function() {
+        this.style.cursor = 'pointer';
     });
 });
+
+console.log('s_design portfolio loaded!');
