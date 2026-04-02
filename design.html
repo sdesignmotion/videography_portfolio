@@ -4,159 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design Portfolio - s_design</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo-left">
-                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
-                    <!-- Phoenix/Wing Logo -->
-                    <defs>
-                        <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" style="stop-color:#D4A574;stop-opacity:1" />
-                            <stop offset="100%" style="stop-color:#E8BF8F;stop-opacity:1" />
-                        </linearGradient>
-                    </defs>
-                    <!-- Left Wing -->
-                    <path d="M60 80 Q40 100 50 130 Q60 140 80 135 Q70 115 75 95 Z" fill="url(#goldGradient)"/>
-                    <!-- Right Wing -->
-                    <path d="M140 80 Q160 100 150 130 Q140 140 120 135 Q130 115 125 95 Z" fill="url(#goldGradient)"/>
-                    <!-- Center Circle Star -->
-                    <circle cx="100" cy="100" r="20" fill="url(#goldGradient)"/>
-                    <!-- Center Diamond -->
-                    <path d="M100 80 L110 90 L100 100 L90 90 Z" fill="#1a1a2e"/>
-                </svg>
-            </div>
-            
-            <ul class="nav-menu-center">
-                <li><a href="index.html" class="nav-link">Videography</a></li>
-                <li><a href="design.html" class="nav-link active">Design</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+        <div class="logo-container">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+                <defs>
+                    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#D4A574;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#E8BF8F;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <path d="M60 80 Q40 100 50 130 Q60 140 80 135 Q70 115 75 95 Z" fill="url(#goldGradient)"/>
+                <path d="M140 80 Q160 100 150 130 Q140 140 120 135 Q130 115 125 95 Z" fill="url(#goldGradient)"/>
+                <circle cx="100" cy="100" r="20" fill="url(#goldGradient)"/>
+                <path d="M100 80 L110 90 L100 100 L90 90 Z" fill="#000"/>
+            </svg>
         </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Portfolio</a></li>
+            <li><a href="#about">Who I am</a></li>
+            <li><a href="#contact">Connect</a></li>
+            <li><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        </ul>
     </nav>
 
-    <!-- Page Header -->
-    <section class="page-header">
+    <!-- Design Portfolio -->
+    <section class="design-page">
         <h1>Design Portfolio</h1>
-        <p>Creative graphic design and visual innovation</p>
-    </section>
-
-    <!-- Design Gallery -->
-    <section class="design-section">
-        <div class="section-header">
-            <h2>Design Work</h2>
-            <div class="underline"></div>
-        </div>
         <div class="design-grid">
             <div class="design-card">
-                <div class="design-image">
-                    <div class="placeholder-1"></div>
-                    <div class="hover-overlay">
-                        <p>Brand Identity</p>
-                    </div>
-                </div>
-                <div class="card-content">
-                    <h3>Brand Identity</h3>
-                    <p class="category">Branding • Logo Design</p>
-                </div>
+                <div class="design-image design-1"></div>
+                <h3>Brand Identity</h3>
+                <p>Logo & Branding Design</p>
             </div>
-
             <div class="design-card">
-                <div class="design-image">
-                    <div class="placeholder-2"></div>
-                    <div class="hover-overlay">
-                        <p>Motion Graphics</p>
-                    </div>
-                </div>
-                <div class="card-content">
-                    <h3>Motion Graphics</h3>
-                    <p class="category">Animation • Visual Effects</p>
-                </div>
+                <div class="design-image design-2"></div>
+                <h3>Social Graphics</h3>
+                <p>Social Media Content</p>
             </div>
-
             <div class="design-card">
-                <div class="design-image">
-                    <div class="placeholder-3"></div>
-                    <div class="hover-overlay">
-                        <p>UI/UX Design</p>
-                    </div>
-                </div>
-                <div class="card-content">
-                    <h3>UI/UX Design</h3>
-                    <p class="category">Interface • User Experience</p>
-                </div>
+                <div class="design-image design-3"></div>
+                <h3>Motion Graphics</h3>
+                <p>Animated Design</p>
             </div>
-
             <div class="design-card">
-                <div class="design-image">
-                    <div class="placeholder-4"></div>
-                    <div class="hover-overlay">
-                        <p>Social Media</p>
-                    </div>
-                </div>
-                <div class="card-content">
-                    <h3>Social Media Content</h3>
-                    <p class="category">Graphics • Marketing</p>
-                </div>
+                <div class="design-image design-4"></div>
+                <h3>UI/UX Design</h3>
+                <p>Interface Design</p>
             </div>
-
             <div class="design-card">
-                <div class="design-image">
-                    <div class="placeholder-5"></div>
-                    <div class="hover-overlay">
-                        <p>Print Design</p>
-                    </div>
-                </div>
-                <div class="card-content">
-                    <h3>Print Design</h3>
-                    <p class="category">Brochures • Posters</p>
-                </div>
+                <div class="design-image design-5"></div>
+                <h3>Print Design</h3>
+                <p>Brochures & Posters</p>
             </div>
-
             <div class="design-card">
-                <div class="design-image">
-                    <div class="placeholder-6"></div>
-                    <div class="hover-overlay">
-                        <p>Packaging</p>
-                    </div>
-                </div>
-                <div class="card-content">
-                    <h3>Packaging Design</h3>
-                    <p class="category">Product • Branding</p>
-                </div>
+                <div class="design-image design-6"></div>
+                <h3>Packaging</h3>
+                <p>Product Design</p>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-content">
-            <div class="social-links">
-                <a href="https://instagram.com" target="_blank" title="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://youtube.com" target="_blank" title="YouTube">
-                    <i class="fab fa-youtube"></i>
-                </a>
-                <a href="https://linkedin.com" target="_blank" title="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://twitter.com" target="_blank" title="Twitter">
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </div>
-            <p>&copy; 2026 s_design. All rights reserved.</p>
-        </div>
+        <p>&copy; 2025 s_design. All rights reserved.</p>
     </footer>
 
     <script src="js/app.js"></script>
