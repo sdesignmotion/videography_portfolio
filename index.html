@@ -3,148 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>s_design - Motion and Graphics</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>s_design - Videographer Evolving</title>
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo-left">
-                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
-                    <!-- Phoenix/Wing Logo -->
-                    <defs>
-                        <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" style="stop-color:#D4A574;stop-opacity:1" />
-                            <stop offset="100%" style="stop-color:#E8BF8F;stop-opacity:1" />
-                        </linearGradient>
-                    </defs>
-                    <!-- Left Wing -->
-                    <path d="M60 80 Q40 100 50 130 Q60 140 80 135 Q70 115 75 95 Z" fill="url(#goldGradient)"/>
-                    <!-- Right Wing -->
-                    <path d="M140 80 Q160 100 150 130 Q140 140 120 135 Q130 115 125 95 Z" fill="url(#goldGradient)"/>
-                    <!-- Center Circle Star -->
-                    <circle cx="100" cy="100" r="20" fill="url(#goldGradient)"/>
-                    <!-- Center Diamond -->
-                    <path d="M100 80 L110 90 L100 100 L90 90 Z" fill="#1a1a2e"/>
-                </svg>
-            </div>
-            
-            <ul class="nav-menu-center">
-                <li><a href="index.html" class="nav-link active">Videography</a></li>
-                <li><a href="design.html" class="nav-link">Design</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+        <div class="logo-container">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+                <defs>
+                    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#D4A574;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#E8BF8F;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <path d="M60 80 Q40 100 50 130 Q60 140 80 135 Q70 115 75 95 Z" fill="url(#goldGradient)"/>
+                <path d="M140 80 Q160 100 150 130 Q140 140 120 135 Q130 115 125 95 Z" fill="url(#goldGradient)"/>
+                <circle cx="100" cy="100" r="20" fill="url(#goldGradient)"/>
+                <path d="M100 80 L110 90 L100 100 L90 90 Z" fill="#000"/>
+            </svg>
         </div>
+
+        <ul class="nav-links">
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">Who I am</a></li>
+            <li><a href="#contact">Connect</a></li>
+            <li><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        </ul>
     </nav>
 
-    <!-- Video Background Hero -->
-    <header class="hero">
-        <video autoplay muted loop class="hero-video">
-            <source src="https://commondatastorage.googleapis.com/gtv-videos-library/sample/BigBuckBunny.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        
-        <div class="video-overlay"></div>
-        
+    <!-- Hero Section -->
+    <section class="hero">
         <div class="hero-content">
-            <h1>s_design</h1>
-            <p class="tagline">Cinematic Storytelling Through Motion & Graphics</p>
-            <p class="hero-description">
-                We create stunning visual content that captivates, inspires, and transforms your brand story into a memorable experience.
-            </p>
-            <a href="#portfolio" class="cta-btn">Explore Our Work</a>
+            <div class="hero-tags">
+                <span>Design</span>
+                <span>Video shooting/editing</span>
+                <span>Illustrations</span>
+            </div>
+            <h1>Videographer<br><span class="highlight">evolving</span></h1>
+            <a href="#portfolio" class="cta-btn">PORTFOLIO</a>
+            <p class="hero-footer">Designer portfolio with a game type feeling. 2025</p>
         </div>
-    </header>
 
-    <!-- Videography Section -->
+        <div class="hero-illustration">
+            <svg viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg" class="neon-illustration">
+                <!-- Neon lines creating abstract 3D effect -->
+                <g class="neon-glow">
+                    <!-- Top layer -->
+                    <path d="M80 100 L320 80 L340 120 L100 140 Z" stroke="#1e40af" stroke-width="3" fill="none"/>
+                    <path d="M70 140 L330 120 L350 160 L90 180 Z" stroke="#1e40af" stroke-width="3" fill="none"/>
+                    
+                    <!-- Middle layer -->
+                    <path d="M60 180 L340 160 L360 200 L80 220 Z" stroke="#2563eb" stroke-width="3" fill="none"/>
+                    <path d="M50 220 L350 200 L370 240 L70 260 Z" stroke="#2563eb" stroke-width="3" fill="none"/>
+                    
+                    <!-- Lower layer -->
+                    <path d="M40 260 L360 240 L380 280 L60 300 Z" stroke="#1e40af" stroke-width="3" fill="none"/>
+                    <path d="M30 300 L370 280 L390 320 L50 340 Z" stroke="#1e40af" stroke-width="3" fill="none"/>
+                    
+                    <!-- Bottom section -->
+                    <path d="M20 340 L380 320 L400 360 L40 380 Z" stroke="#2563eb" stroke-width="3" fill="none"/>
+                    <path d="M10 380 L390 360 L400 400 L30 420 Z" stroke="#2563eb" stroke-width="3" fill="none"/>
+                    
+                    <!-- Abstract shapes -->
+                    <circle cx="200" cy="450" r="40" stroke="#1e40af" stroke-width="2" fill="none"/>
+                    <circle cx="200" cy="450" r="60" stroke="#2563eb" stroke-width="2" fill="none" opacity="0.6"/>
+                    
+                    <!-- Corner accents -->
+                    <path d="M320 100 L340 80 L350 100" stroke="#1e40af" stroke-width="2" fill="none"/>
+                    <path d="M330 120 L355 95 L360 130" stroke="#2563eb" stroke-width="2" fill="none"/>
+                </g>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio-section">
         <div class="section-header">
-            <h2>Latest Videography</h2>
+            <h2>Latest Works</h2>
             <div class="underline"></div>
         </div>
-        <div class="video-grid">
-            <div class="video-card">
-                <div class="video-wrapper">
+        <div class="portfolio-grid">
+            <div class="portfolio-card">
+                <div class="card-image">
                     <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
                 </div>
-                <div class="card-content">
-                    <h3>Corporate Storytelling</h3>
-                    <p class="client">Brand Documentary • 2026</p>
-                </div>
+                <h3>Cinematic Project</h3>
+                <p>Video Production • 2025</p>
             </div>
-            <div class="video-card">
-                <div class="video-wrapper">
+            <div class="portfolio-card">
+                <div class="card-image">
                     <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
                 </div>
-                <div class="card-content">
-                    <h3>Event Highlight Reel</h3>
-                    <p class="client">Live Event Coverage • 2026</p>
-                </div>
+                <h3>Brand Commercial</h3>
+                <p>Commercial • 2025</p>
             </div>
-            <div class="video-card">
-                <div class="video-wrapper">
+            <div class="portfolio-card">
+                <div class="card-image">
                     <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
                 </div>
-                <div class="card-content">
-                    <h3>Product Commercial</h3>
-                    <p class="client">Commercial Production • 2026</p>
-                </div>
+                <h3>Motion Graphics</h3>
+                <p>Animation • 2025</p>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="services-section">
-        <div class="section-header">
-            <h2>Our Services</h2>
-            <div class="underline"></div>
-        </div>
-        <div class="services-grid">
-            <div class="service-card">
-                <i class="fas fa-video"></i>
-                <h3>Videography</h3>
-                <p>Professional video production, cinematography, and post-production services for your brand.</p>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2>Who I am</h2>
+        <p>I'm a passionate videographer and designer dedicated to creating compelling visual content that tells your brand's story. With expertise in video production, motion graphics, and graphic design, I bring creative visions to life.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Connect</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:hello@sdesign.com">hello@sdesign.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-890</a></p>
             </div>
-            <div class="service-card">
-                <i class="fas fa-paint-brush"></i>
-                <h3>Motion Graphics</h3>
-                <p>Dynamic animated graphics, transitions, and visual effects that bring your ideas to life.</p>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-pen-fancy"></i>
-                <h3>Graphic Design</h3>
-                <p>Creative branding, logos, social media content, and visual identity design.</p>
+            <div class="social-icons">
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-content">
-            <div class="social-links">
-                <a href="https://instagram.com" target="_blank" title="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://youtube.com" target="_blank" title="YouTube">
-                    <i class="fab fa-youtube"></i>
-                </a>
-                <a href="https://linkedin.com" target="_blank" title="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://twitter.com" target="_blank" title="Twitter">
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </div>
-            <p>&copy; 2026 s_design. All rights reserved.</p>
-        </div>
+        <p>&copy; 2025 s_design. All rights reserved.</p>
     </footer>
 
     <script src="js/app.js"></script>
