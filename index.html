@@ -11,12 +11,32 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo-text">s_design</div>
-            <ul class="nav-menu">
+            <div class="logo-left">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+                    <!-- Phoenix/Wing Logo -->
+                    <defs>
+                        <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#D4A574;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#E8BF8F;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <!-- Left Wing -->
+                    <path d="M60 80 Q40 100 50 130 Q60 140 80 135 Q70 115 75 95 Z" fill="url(#goldGradient)"/>
+                    <!-- Right Wing -->
+                    <path d="M140 80 Q160 100 150 130 Q140 140 120 135 Q130 115 125 95 Z" fill="url(#goldGradient)"/>
+                    <!-- Center Circle Star -->
+                    <circle cx="100" cy="100" r="20" fill="url(#goldGradient)"/>
+                    <!-- Center Diamond -->
+                    <path d="M100 80 L110 90 L100 100 L90 90 Z" fill="#1a1a2e"/>
+                </svg>
+            </div>
+            
+            <ul class="nav-menu-center">
                 <li><a href="index.html" class="nav-link active">Videography</a></li>
                 <li><a href="design.html" class="nav-link">Design</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
+
             <div class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
@@ -25,26 +45,29 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Video Background Hero -->
     <header class="hero">
+        <video autoplay muted loop class="hero-video">
+            <source src="https://commondatastorage.googleapis.com/gtv-videos-library/sample/BigBuckBunny.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <div class="video-overlay"></div>
+        
         <div class="hero-content">
-            <div class="logo-icon">
-                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Phoenix/Wing Logo -->
-                    <path d="M100 50 Q130 70 140 110 Q145 130 120 150 Q100 165 80 150 Q55 130 60 110 Q70 70 100 50" fill="#D4A574"/>
-                    <path d="M100 100 Q110 110 100 120 Q90 110 100 100" fill="#1a1a2e"/>
-                </svg>
-            </div>
             <h1>s_design</h1>
-            <p class="tagline">motion and graphics</p>
-            <a href="#portfolio" class="cta-btn">Explore My Work</a>
+            <p class="tagline">Cinematic Storytelling Through Motion & Graphics</p>
+            <p class="hero-description">
+                We create stunning visual content that captivates, inspires, and transforms your brand story into a memorable experience.
+            </p>
+            <a href="#portfolio" class="cta-btn">Explore Our Work</a>
         </div>
     </header>
 
     <!-- Videography Section -->
     <section id="portfolio" class="portfolio-section">
         <div class="section-header">
-            <h2>Videography</h2>
+            <h2>Latest Videography</h2>
             <div class="underline"></div>
         </div>
         <div class="video-grid">
@@ -53,8 +76,8 @@
                     <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
                 </div>
                 <div class="card-content">
-                    <h3>Corporate Video</h3>
-                    <p class="client">Client Project</p>
+                    <h3>Corporate Storytelling</h3>
+                    <p class="client">Brand Documentary • 2026</p>
                 </div>
             </div>
             <div class="video-card">
@@ -62,8 +85,8 @@
                     <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
                 </div>
                 <div class="card-content">
-                    <h3>Event Coverage</h3>
-                    <p class="client">Client Project</p>
+                    <h3>Event Highlight Reel</h3>
+                    <p class="client">Live Event Coverage • 2026</p>
                 </div>
             </div>
             <div class="video-card">
@@ -71,8 +94,8 @@
                     <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
                 </div>
                 <div class="card-content">
-                    <h3>Commercial</h3>
-                    <p class="client">Client Project</p>
+                    <h3>Product Commercial</h3>
+                    <p class="client">Commercial Production • 2026</p>
                 </div>
             </div>
         </div>
@@ -81,24 +104,24 @@
     <!-- Services Section -->
     <section class="services-section">
         <div class="section-header">
-            <h2>Services</h2>
+            <h2>Our Services</h2>
             <div class="underline"></div>
         </div>
         <div class="services-grid">
             <div class="service-card">
                 <i class="fas fa-video"></i>
                 <h3>Videography</h3>
-                <p>Professional video production and cinematography</p>
+                <p>Professional video production, cinematography, and post-production services for your brand.</p>
             </div>
             <div class="service-card">
                 <i class="fas fa-paint-brush"></i>
                 <h3>Motion Graphics</h3>
-                <p>Dynamic animated graphics and visual effects</p>
+                <p>Dynamic animated graphics, transitions, and visual effects that bring your ideas to life.</p>
             </div>
             <div class="service-card">
                 <i class="fas fa-pen-fancy"></i>
-                <h3>Design</h3>
-                <p>Creative graphic design and branding</p>
+                <h3>Graphic Design</h3>
+                <p>Creative branding, logos, social media content, and visual identity design.</p>
             </div>
         </div>
     </section>
